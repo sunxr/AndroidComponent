@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxJavaDemo">
         <activity
+            android:name=".RxBindingActivity"
+            android:exported="true" />
+        <activity
             android:name=".NormalRxActivity"
             android:exported="true" />
         <activity
