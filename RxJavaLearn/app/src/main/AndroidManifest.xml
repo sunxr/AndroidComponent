@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxJavaDemo">
         <activity
+            android:name=".RxSortActivity"
+            android:exported="true" />
+        <activity
             android:name=".RxSchedulerActivity"
             android:exported="true" />
         <activity
