@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button8:
                 intent = new Intent(MainActivity.this,RxTakeActivity.class);
                 break;
+            case R.id.button9:
+                intent = new Intent(MainActivity.this,RxTimerActivity.class);
+                break;
             case R.id.button10:
                 intent = new Intent(MainActivity.this,RxSortActivity.class);
                 break;
