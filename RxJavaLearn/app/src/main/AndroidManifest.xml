@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxJavaDemo">
         <activity
+            android:name=".RxFilterActivity"
+            android:exported="true" />
+        <activity
             android:name=".RxConnectActivity"
             android:exported="true" />
         <activity
