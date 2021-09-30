@@ -44,7 +44,6 @@ public class RxTimerActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.text1:
-                break;
             case R.id.edit1:
                 break;
             case R.id.button:
