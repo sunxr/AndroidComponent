@@ -39,7 +39,6 @@ public class NormalRxActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.text1:
-                break;
             case R.id.edit1:
                 break;
             case R.id.button:
@@ -52,7 +51,25 @@ public class NormalRxActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void start() {
-        
+        //创建被观察者
+        Observable observable = createObservable();
+        //创建观察者
+        Subscriber subscriber = createSubscriber();
+
+        mText.append("开始订阅，准备观察...\n");
+        //observable不止可以订阅subscriber，也可以订阅ActionX()
+        observable.subscribe(subscriber);
+
+        //就像现在这样
+//        observable.subscribe(new Action1<String>() {
+//            @Override
+//            public void call(String s) {
+//                //Action1也就意味着，只能传入一个参数 ----> String s,同理Action0，Action2....,
+//                //在这个call方法中传入了onNext()的参数，相当于代替了onNext方法，但是就不能监听onComplete,onError方法了
+//                mText.append("执行观察者中的onNext()...\n");
+//                mText.append(s+"...\n");
+//            }
+//        });
 
     }
 

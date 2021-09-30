@@ -9,16 +9,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mBtn1;
-    private Button mBtn2;
-    private Button mBtn3;
-    private Button mBtn4;
-    private Button mBtn5;
-    private Button mBtn6;
-    private Button mBtn7;
-    private Button mBtn8;
-    private Button mBtn9;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
-
+            case R.id.button1:
+                intent=new Intent(MainActivity.this, NormalRxActivity.class);
+                break;
         }
         startActivity(intent);
     }
