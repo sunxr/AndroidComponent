@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
           R.id.btn_custom_attribute -> intent = Intent(this@MainActivity, CustomAttributeActivity::class.java)
           R.id.btn_observable -> intent = Intent(this@MainActivity, ObservableActivity::class.java)
           R.id.btn_double_binding -> intent = Intent(this@MainActivity, DoubleBindingActivity::class.java)
+          R.id.btn_event_handling -> intent = Intent(this@MainActivity, EventHandlingActivity::class.java)
         }
         intent?.let {
           startActivity(it)
