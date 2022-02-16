@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo_DataBinding">
         <activity
+            android:name=".ui.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.EventHandlingActivity"
             android:exported="false" />
         <activity

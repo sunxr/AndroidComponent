@@ -10,6 +10,8 @@
         <entry key="app/src/main/res/layout/activity_layout_detail.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_observable.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/adapter_recycler_view.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/layout_include.xml" value="0.4244791666666667" />
       </map>
     </option>
