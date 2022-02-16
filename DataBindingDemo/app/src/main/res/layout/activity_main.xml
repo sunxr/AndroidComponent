@@ -47,6 +47,14 @@
                 android:text="动态更新" />
 
             <Button
+                android:id="@+id/btn_double_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="@{clickListener}"
+                android:text="双向绑定" />
+
+            <Button
                 android:id="@+id/btn_custom_attribute"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

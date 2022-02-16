@@ -4,9 +4,14 @@ import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import com.sun.alone.demo_databinding.BR
 
-class ObservableObjectsUser(firstName: String, lastName: String) : BaseObservable() {
+class ObservableObjectsUser() : BaseObservable() {
 
-  var firstName: String? = firstName
+  constructor(firstName: String, lastName: String) : this(){
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  var firstName: String? = ""
     set(value) {
       field = value
       notifyPropertyChanged(BR.firstName)
@@ -16,7 +21,7 @@ class ObservableObjectsUser(firstName: String, lastName: String) : BaseObservabl
       return field ?: ""
     }
 
-  var lastName: String? = lastName
+  var lastName: String? = ""
     set(value) {
       field = value
       notifyPropertyChanged(BR.lastName)
